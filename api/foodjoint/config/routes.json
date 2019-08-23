@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/foodjoints",
+      "handler": "Foodjoint.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/foodjoints/count",
+      "handler": "Foodjoint.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/foodjoints/:id",
+      "handler": "Foodjoint.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/foodjoints",
+      "handler": "Foodjoint.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/foodjoints/:id",
+      "handler": "Foodjoint.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/foodjoints/:id",
+      "handler": "Foodjoint.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

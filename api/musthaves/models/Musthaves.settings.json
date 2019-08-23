@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "musthaves",
+  "info": {
+    "name": "musthaves",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "dish-name": {
+      "type": "string"
+    },
+    "dish-picture": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "foodjoint": {
+      "model": "foodjoint",
+      "via": "musthaves"
+    }
+  }
+}

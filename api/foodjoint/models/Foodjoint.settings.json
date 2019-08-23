@@ -1,0 +1,61 @@
+{
+  "connection": "default",
+  "collectionName": "foodjoints",
+  "info": {
+    "name": "foodjoint",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "location": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "latitute": {
+      "type": "decimal"
+    },
+    "longitute": {
+      "type": "decimal"
+    },
+    "main_image": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "other_images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "categories": {
+      "collection": "category",
+      "via": "foodjoints"
+    },
+    "signature-dish": {
+      "type": "string"
+    },
+    "musthaves": {
+      "collection": "musthaves",
+      "via": "foodjoint"
+    },
+    "city": {
+      "model": "city",
+      "via": "foodjoints"
+    }
+  }
+}

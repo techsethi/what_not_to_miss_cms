@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/musthaves",
+      "handler": "Musthaves.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/musthaves/count",
+      "handler": "Musthaves.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/musthaves/:id",
+      "handler": "Musthaves.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/musthaves",
+      "handler": "Musthaves.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/musthaves/:id",
+      "handler": "Musthaves.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/musthaves/:id",
+      "handler": "Musthaves.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
