@@ -615,6 +615,9 @@
                   "type": "string"
                 }
               },
+              "thumbnail": {
+                "type": "string"
+              },
               "city": {
                 "type": "string"
               }

@@ -621,11 +621,20 @@
                     "type": "string"
                   }
                 },
+                "thumbnail": {
+                  "type": "string"
+                },
                 "city": {
                   "type": "string"
                 }
               }
             }
+          },
+          "latitute": {
+            "type": "number"
+          },
+          "longitute": {
+            "type": "number"
           }
         }
       },
@@ -645,6 +654,12 @@
             "items": {
               "type": "string"
             }
+          },
+          "latitute": {
+            "type": "number"
+          },
+          "longitute": {
+            "type": "number"
           }
         }
       }

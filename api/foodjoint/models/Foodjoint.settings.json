@@ -53,6 +53,11 @@
       "collection": "musthaves",
       "via": "foodjoint"
     },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
     "city": {
       "model": "city",
       "via": "foodjoints"
